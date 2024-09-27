@@ -2,13 +2,10 @@ from PriorityQueue import PriorityQueueWithFunction
 
 
 class Agent:
-    """Agent based on the A* algorithm."""
+    """Agent based on the A* algorithm.
 
-    def __init__(
-        self, defaultMove, isGoal, stateToKey, generateSuccessors, costFunction
-    ):
-        """
-        defaultMove : move to perform when nothing to do anymore
+    Arguments:
+        defaultdefaultMove : move to perform when nothing to do anymore
         isGoal : checks state to see if it's a goal
         stateToKey : function that takes a state as arg and returns
             an hashable key tuple to uniquely identify an env state.
@@ -23,8 +20,11 @@ class Agent:
                 pathToCurrentState
             Returns :
                 The estimated cost
-        """
+    """
 
+    def __init__(
+        self, defaultMove, isGoal, stateToKey, generateSuccessors, costFunction
+    ):
         self.moves = None
         self.defaultMove = defaultMove
         self.isGoal = isGoal
