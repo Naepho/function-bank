@@ -19,5 +19,5 @@ is written in bold. Its goal is then shortly stated. If additionnal information
 is needed to use it, it is added right after.
 
 # Correspondance between wiki and /docs/
-index.md <=> Documentation
-wiki.md <=> Editing rules
+- index.md <=> Documentation
+- wiki.md <=> Editing rules
